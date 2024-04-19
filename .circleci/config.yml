@@ -1,12 +1,14 @@
 version: 2.1
 
 orbs:
-  android: circleci/android@1.0.3
+  android: circleci/android@2.4.0
 
 jobs:
   build-and-upload:
     executor:
       name: android/android-machine
+      resource-class: large
+      tag: default
     environment:
       release_notes: "Test config CircleCi"
       notify: true
