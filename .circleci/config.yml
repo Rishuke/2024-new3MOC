@@ -23,6 +23,6 @@ jobs:
             java -version
 
 workflows:
-  tesappio-release:
+  test-workflow:
     jobs:
       - build-and-upload
